@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Alex Web Development</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alex Dominte's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.yourwebsite.com/img/yourimage.png" />
+    <meta property="og:url" content="https://alex-dominte.netlify.app/" />
+    <meta property="og:description" content="Explore my new web page.." />
+
     <!-- Favicon -->
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -27,13 +35,7 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }  
-    </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -118,24 +120,25 @@
 
     <main style="background: linear-gradient(#757C7A, #EFF1F4);">
       <!-- Section: About me  -->
-      <section class="text-center" id="about">
+      <section class="text-center" style="min-height: 850px;" id="about">
         <h3 class="py-5 text-black"><strong>About me</strong></h3>
         <div class="row d-flex justify-content-center">
-          <div class="col-md-4 mb-4">
+          <div class="col-xl-2 col-md-3 me-1 mb-4">
             <img 
-              src="img/profilo quadrato.png" 
-              class="rounded-circle shadow-5-strong img-fluid img-thumbnail mb-4 mx-5"
-              style="max-width: 200px;"
-              alt="Avatar">
+            src="img/profilo quadrato.png" 
+            class="rounded-circle shadow-5-strong img-fluid img-thumbnail mb-4"
+            style="max-width: 200px;"
+            alt="Avatar">
+
           </div>
-          <div class="col-md-4 mb-4 text-start ms-3 text-black pe-5 ps-4">
+          <div class="col-xl-6 col-md-5 col-sm-8 mb-4 text-start ms-4 text-black pe-5 ps-4">
             <!-- First row  -->
             <p>Hi there! I'm Alex Dominte, a passionate web developer with a deep love for technology. My journey in web development began with an interest for how websites work, leading me to specialize in HTML and CSS. I'm currently expanding my skill set and diving into new technologies to stay ahead in this fast-paced field.</p>
             <p>I'm pursuing my studies through Start2Impact, and I'm also gaining real-world experience as an au pair in Luxembourg with an Australian family. This unique experience has allowed me to immerse myself in a new culture, enjoy outdoor adventures, and continuously strive for personal growth.</p>
-            <p>Technology isn't my only passion—I also have a keen eye for photography. Capturing the beauty of the world through my camera lens is one of my favorite ways to unwind and express creativity. Whether it's a stunning landscape or a candid moment, I love freezing time through photography.</p>
+            <p>Technology isn't my only passion - I also have a keen eye for photography. Capturing the beauty of the world through my camera lens is one of my favorite ways to unwind and express creativity. Whether it's a stunning landscape or a candid moment, I love freezing time through photography.</p>
             <p>My mission is to combine my web development skills with my love for technology to create websites that are innovative and dynamic. I'm dedicated to continuous learning and improvement, always seeking to enhance my skills and deliver high-quality work.</p>
             <p>Let's connect and see how I can help bring your web project to life!</p>
-            <a href="https://www.linkedin.com/in/alexandru-george-dominte-01927b26b/" target="_blank">Connect with me on LinkedIn</a>
+            <a class="my-5" href="https://www.linkedin.com/in/alexandru-george-dominte-01927b26b/" target="_blank">Connect with me on LinkedIn</a>
           </div>
         </div>
       </section>
@@ -177,12 +180,12 @@
     </main>
 
         <!-- Footer -->
-    <footer class="text-center text-white" style="background: linear-gradient(#EFF1F4, #757C7A);">
+    <footer class="text-center text-white" style="background-color: #757C7A">
       <!-- Grid container -->
       <div class="container p-4">
 
         <!-- Section: Social media -->
-        <section class="mb-4">
+        <section>
           <!-- Linkedin -->
           <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" target="_blank" href="https://www.linkedin.com/in/alexandru-george-dominte-01927b26b/" role="button"><i class="fab fa-linkedin-in"></i></a>
           <!-- Github -->
