@@ -1,21 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 20px;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 80px;
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
+.section-div {
+  margin-bottom: 30px;
+}
+
+.skills-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cv-sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
   text-align: center;
-  padding: 1rem;
 }
 
-.cv-section {
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
+.cv-sidebar img {
+  width: 100px;
+  border-radius: 50%;
 }
 
-h2 {
-  color: #4CAF50;
+.cv-content {
+  padding: 20px;
+}
+
+.profile-img{
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr; /* one column only on mobile devices */
+  }
 }
