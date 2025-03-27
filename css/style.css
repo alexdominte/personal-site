@@ -28,6 +28,11 @@ html, body {
   color: #0056b3;
 }
 
+.project-img{
+  height: 200px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   #about .col-md-4 {
     margin-bottom: 2rem;

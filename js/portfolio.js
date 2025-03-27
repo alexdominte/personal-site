@@ -18,6 +18,11 @@ projects = [{
   link: 'https://p-a-save-the-date.netlify.app/',
   title: 'Save the date',
   description: 'This is a simple and elegant wedding invitation webpage designed to share a special moment with loved ones. Click the link to reveal the details!'
+}, {
+  image: '../assets/img/shopping-list.png',
+  link: 'https://new-shopping-list.netlify.app/',
+  title: 'Shopping List',
+  description: 'A simple web application to create and manage a shopping list using HTML, CSS, and JavaScript. The list persists using localStorage, so your items stay saved even after closing the browser.'
 }];
 
 let projectsHTML = ''
@@ -27,7 +32,7 @@ projects.forEach(project => {
     <div class="col">
       <div class="card h-100">
         <a href="${project.link}" target="_blank">
-          <img src="${project.image}" class="card-img-top">
+          <img src="${project.image}" class="card-img-top project-img">
         </a>
         <div class="card-body">
           <a href="${project.link}" target="_blank">
@@ -41,8 +46,6 @@ projects.forEach(project => {
     </div>
   `;
 });
-
-console.log(projectsHTML);
 
 document.querySelector('.js-projects-grid')
   .innerHTML = projectsHTML;
