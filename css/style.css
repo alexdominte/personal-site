@@ -31,6 +31,7 @@ html, body {
 .project-img{
   height: 200px;
   object-fit: cover;
+  object-position: top;
 }
 
 @media (max-width: 768px) {
